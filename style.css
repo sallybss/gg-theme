@@ -159,27 +159,28 @@ body {
 }
 
 
-.form-wrapper {
+/* Contact Form Container */
+.contact-form {
+    display: flex;
+    justify-content: flex-end;
+    /* Align the form to the right */
+    align-items: center;
+    padding: 50px;
+    background-color: #FBFAF8;
+}
+
+/* Form Wrapper */
+.contact-form .form-wrapper {
     background-color: #242526;
-    padding: 10px;
+    padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    flex: 1;
-    margin: auto;
+    width: 45%;
+    /* Ensure the form is wide but not too long */
+    max-width: 400px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-/* .contact-form {
-    margin-left: 200px;
-} */
-
+/* Form Inputs */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -193,12 +194,12 @@ select {
     width: 100%;
     box-sizing: border-box;
     color: #1A1B1C;
+    margin-bottom: 15px;
 }
 
 textarea {
     resize: vertical;
-    height: 50px;
-
+    height: 80px;
 }
 
 select {
@@ -207,6 +208,7 @@ select {
     border-radius: 8px;
 }
 
+/* Submit Button */
 input[type="submit"] {
     background-color: #FF6214;
     color: #FBFAF8;
@@ -216,6 +218,7 @@ input[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
@@ -226,6 +229,7 @@ input[type="submit"]:focus {
     outline: none;
 }
 
+/* Labels */
 form label {
     color: #FBFAF8;
     font-size: 14px;
@@ -235,32 +239,17 @@ form label {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .form-wrapper {
-        max-width: 100%;
-        padding: 10px;
+    .contact-form {
+        justify-content: center;
+        /* Center form on smaller screens */
+        padding: 20px;
     }
 
-    form {
-        gap: 8px;
+    .contact-form .form-wrapper {
+        width: 100%;
     }
 }
 
-/* .hero video {
-    z-index: -10000;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.videooverlay::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0));
-
-} */
 
 .map .content {
     display: flex;

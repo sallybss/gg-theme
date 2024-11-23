@@ -23,31 +23,34 @@
         <?php endif; ?>
     </div>
 
-    <!-- WordPress Navigation Menu -->
-    <?php
-    wp_nav_menu( array(
-        'theme_location' => 'primary-menu',
-        'container' => false, // No container (i.e., no <div> around the <ul>)
-        'items_wrap' => '<ul class="menu">%3$s</ul>', // Wrap items in <ul> tag with a class
-        'fallback_cb' => function () {
-            echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
-        },
-    ));
-    ?>
+    <div class="menu-container">
+        <!-- WordPress Navigation Menu -->
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'primary-menu',
+            'container' => false, // No container (i.e., no <div> around the <ul>)
+            'items_wrap' => '<ul class="menu">%3$s</ul>', // Wrap items in <ul> tag with a class
+            'fallback_cb' => function () {
+                echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+            },
+        ));
+        ?>
 
-    <!-- Language Flags Next to Contact -->
-    <?php if (function_exists('pll_the_languages')): ?>
-        <div class="language-switcher">
-            <ul>
-                <?php
-                pll_the_languages(array(
-                    'show_flags' => 1,
-                    'show_names' => 0
-                ));
-                ?>
-            </ul>
-        </div>
-    <?php endif; ?>
+        <!-- Language Dropdown -->
+        <?php if (function_exists('pll_the_languages')): ?>
+            <div class="language-dropdown">
+                <select onchange="window.location.href=this.value;">
+                    <?php
+                    pll_the_languages(array(
+                        'show_flags' => 0,
+                        'show_names' => 1,
+                        'dropdown' => 1
+                    ));
+                    ?>
+                </select>
+            </div>
+        <?php endif; ?>
+    </div>
 </div>
 
 <?php wp_footer(); ?>

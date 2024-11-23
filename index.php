@@ -28,12 +28,23 @@
 
         <!-- Hero Section -->
         <div class="hero">
-        <?php if ($herovideo): ?>
+    <?php 
+    // Make sure $herovideo is set
+    if (isset($herovideo) && $herovideo): 
+        // Ensure $herovideoFileUrl is set and not empty
+        if (isset($herovideoFileUrl) && !empty($herovideoFileUrl)): ?>
             <div class="videooverlay">
                 <video autoplay loop muted playsinline>
                     <source src="<?php echo esc_url($herovideoFileUrl); ?>" type="video/mp4">
                 </video>
             </div>
+        <?php else: ?>
+            <p>Video URL is not available.</p>
+        <?php endif; 
+    else: ?>
+        <p>No hero video provided.</p>
+    <?php endif; ?>
+</div>
 
         <!-- Intro Section -->
        <div class="intro">

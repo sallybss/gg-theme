@@ -281,46 +281,58 @@ input[type="submit"]:focus {
 
 }
 
+/* Container for the entire section */
 .trees {
     position: relative;
     width: 100%;
     height: 500px;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    background-size: cover;
+    background-position: center;
 }
 
+/* Overlay for the black opacity */
 .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('<?php echo $treeimg["url"]; ?>');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
+    /* Black overlay */
+    z-index: 1;
+    /* Behind content */
 }
 
+/* Text styling */
 .trees-text {
     position: relative;
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
+    z-index: 2;
+    /* Above the overlay */
 }
 
+/* Logo container styling */
 .logo-container {
+    position: relative;
+    z-index: 2;
+    /* Above the overlay */
     display: flex;
     justify-content: center;
     margin-top: 10px;
-
 }
 
+/* Logo image styling */
 .tree-logo {
     width: 150px;
     height: auto;

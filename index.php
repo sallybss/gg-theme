@@ -89,7 +89,7 @@
 
 
 <div class="trees">
-    <div class="image-overlay" style="background-image: url('<?php echo $treeimg["url"]; ?>');"></div>
+    <div class="image-overlay"></div>
     <h1 class="trees-text"><?php echo $treeh1; ?></h1>
 
     <div class="logo-container">

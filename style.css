@@ -173,13 +173,12 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 3px;
 
 }
 
-.contact-form {
+/* .contact-form {
     margin-left: 200px;
-}
+} */
 
 input[type="text"],
 input[type="email"],
@@ -193,7 +192,7 @@ select {
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
-    color: #FBFAF8;
+    color: #1A1B1C;
 }
 
 textarea {

@@ -12,6 +12,7 @@ body {
     background-color: #FBFAF8;
 }
 
+/* Keep the same styles */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -20,20 +21,17 @@ body {
     font-family: "Rubik", serif;
     z-index: 1;
     position: relative;
-
 }
 
 .nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-
 }
 
 .nav ul li {
     color: rgb(26, 25, 25);
     cursor: pointer;
-
 }
 
 .nav ul li:hover {
@@ -43,6 +41,20 @@ body {
 .nav .logo img {
     width: 150px;
     height: auto;
+}
+
+/* Add styles for WordPress menu */
+.nav ul li.menu-item {
+    display: inline-block;
+}
+
+.nav ul li.menu-item a {
+    color: rgb(26, 25, 25);
+    text-decoration: none;
+}
+
+.nav ul li.menu-item a:hover {
+    color: #FF6214;
 }
 
 .hero {

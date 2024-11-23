@@ -27,7 +27,13 @@
     ?>
 
         <!-- Hero Section -->
-   
+        <div class="hero">
+        <?php if ($herovideo): ?>
+            <div class="videooverlay">
+                <video autoplay loop muted playsinline>
+                    <source src="<?php echo esc_url($herovideoFileUrl); ?>" type="video/mp4">
+                </video>
+            </div>
 
         <!-- Intro Section -->
        <div class="intro">

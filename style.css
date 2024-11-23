@@ -306,10 +306,20 @@ input[type="submit"]:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Black overlay with opacity */
     z-index: 1;
     /* Behind content */
+}
+
+/* Apply a gradient overlay using ::after */
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0));
+    z-index: 2;
+    /* Above the image but behind text/logo */
 }
 
 /* Text styling */
@@ -318,14 +328,14 @@ input[type="submit"]:focus {
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
-    z-index: 2;
+    z-index: 3;
     /* Above the overlay */
 }
 
 /* Logo container styling */
 .logo-container {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     /* Above the overlay */
     display: flex;
     justify-content: center;

@@ -16,19 +16,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 150px;
-    /* Same padding as in your second set */
+    padding: 0px 30px;
+    /* Reduce the padding */
     font-family: "Rubik", serif;
-    /* Add the font-family for consistency */
     z-index: 1;
-    /* Add z-index for positioning */
     position: relative;
-    /* Position set to relative for layering purposes */
+    height: 110px;
+    /* Set the height explicitly */
+    max-width: 100%;
+    /* Ensure the navbar does not exceed the width of the container */
 }
 
 .nav .logo img {
     width: 150px;
-    /* Same width as before */
     height: auto;
 }
 
@@ -36,30 +36,24 @@ ul.menu {
     list-style: none;
     display: flex;
     gap: 30px;
-    /* Same gap between menu items as in your second set */
+    /* Same gap between menu items as before */
 }
 
 ul.menu li {
     color: rgb(26, 25, 25);
-    /* Same color for text */
     cursor: pointer;
-    /* Set cursor to pointer for interactivity */
+    /* Adjust the size of menu items */
 }
 
 ul.menu li a {
     text-decoration: none;
-    /* Remove underlines from links */
     color: #333;
-    /* Set text color */
     font-size: 16px;
-    /* Set font size */
     padding: 10px;
-    /* Add padding around links */
 }
 
 ul.menu li a:hover {
     color: #FF6214;
-    /* Color on hover */
 }
 
 .hero {

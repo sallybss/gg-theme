@@ -133,8 +133,6 @@ body {
 
 .booking-content {
     display: flex;
-    padding: 0 10%;
-
 
 }
 
@@ -142,6 +140,7 @@ body {
     color: #FBFAF8;
     font-family: "Rubik", serif;
     max-width: 544px;
+    margin-left: 2%;
 }
 
 .booking h1 {

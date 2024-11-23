@@ -134,7 +134,6 @@ body {
 .booking-content {
     display: flex;
     justify-content: space-between;
-    padding: 0 10%;
     gap: 5%;
     /* Optional for spacing between text and form */
 }
@@ -142,7 +141,8 @@ body {
 .booking-text {
     color: #FBFAF8;
     font-family: "Rubik", serif;
-    max-width: 544px;
+    max-width: 600px;
+    padding-left: 5.5%;
 }
 
 .booking h1 {

@@ -160,20 +160,24 @@ body {
     margin-bottom: 6%;
 }
 
+
 .form-wrapper {
     background-color: #FBFAF8;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    /* Wider form */
     flex: 1;
+    margin: auto;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    /* Smaller gaps between fields */
 }
 
 input[type="text"],
@@ -182,22 +186,27 @@ input[type="tel"],
 input[type="date"],
 textarea,
 select {
-    padding: 15px;
-    font-size: 16px;
+    padding: 12px;
+    /* Adjusted for a cleaner look */
+    font-size: 14px;
+    /* Slightly smaller font size */
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
+    color: #000;
+    /* Black text */
 }
 
 textarea {
     resize: vertical;
-    height: 150px;
+    height: 100px;
+    /* Shorter height */
 }
 
 select {
-    padding: 14px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 14px;
     border-radius: 8px;
 }
 
@@ -205,8 +214,8 @@ input[type="submit"] {
     background-color: #FF6214;
     color: white;
     border: none;
-    padding: 15px;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -222,18 +231,15 @@ input[type="submit"]:focus {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .booking-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .booking-text {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
     .form-wrapper {
-        max-width: 90%;
+        max-width: 100%;
+        /* Full width for smaller screens */
+        padding: 10px;
+    }
+
+    form {
+        gap: 8px;
+        /* Smaller gap for compactness on mobile */
     }
 }
 

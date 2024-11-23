@@ -31,7 +31,6 @@
 
         <!-- Intro Section -->
        <div class="intro">
-<h1> HELLO WORLD TEST </h1>
        <h1><?php echo $aboutheadline; ?></h1>
        <p><?php echo  $abouttext; ?></p>
 
@@ -55,7 +54,7 @@
                 
         <div class="contact-form">
             <div class="form-wrapper">
-                <?php echo do_shortcode('[contact-form-7 id="1f164f8" title="Booking"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="ffa9568" title="Booking"]'); ?>
             </div>
         </div>
             </div>

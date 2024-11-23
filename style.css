@@ -229,6 +229,17 @@ input[type="submit"]:focus {
     outline: none;
 }
 
+form label {
+    color: #000;
+    /* Black text for labels */
+    font-size: 14px;
+    /* Adjust size as needed */
+    margin-bottom: 5px;
+    /* Add spacing between labels and fields */
+    display: block;
+    /* Ensure labels are on their own line */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .form-wrapper {

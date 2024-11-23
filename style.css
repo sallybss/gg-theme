@@ -1,2 +1,371 @@
 /* Theme Name: GG-theme
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #FBFAF8;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+    font-family: "Rubik", serif;
+    z-index: 1;
+    position: relative;
+
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav ul li {
+    color: rgb(26, 25, 25);
+    cursor: pointer;
+
+}
+
+.nav ul li:hover {
+    color: #FF6214;
+}
+
+.nav .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+
+.intro {
+    background-color: #1A1B1C;
+    font-family: "Dela Gothic One", serif;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+
+.intro::after {
+    position: absolute;
+    top: -9.9vw;
+    left: 0;
+    content: '';
+    height: 0;
+    width: 0;
+    border-right: 100vw solid #1A1B1C;
+    border-top: 10vw solid transparent;
+    border-bottom: 0px solid transparent;
+    overflow: hidden;
+}
+
+.intro img {
+    height: auto;
+    width: 100%;
+}
+
+.intro p {
+    color: #FBFAF8;
+    margin-top: 3%;
+    font-family: "Rubik", serif;
+    max-width: 882px;
+    font-size: 18px;
+    margin-left: 108px;
+    margin-bottom: 6%;
+}
+
+.intro h1 {
+    color: #FBFAF8;
+    font-size: 600%;
+    line-height: 90px;
+    padding-top: 3.7%;
+    margin-left: 108px;
+    padding-right: 20%;
+}
+
+.menu {
+    padding: 6%;
+    background-color: #FBFAF8;
+    margin-bottom: 6%;
+}
+
+.menu img {
+    height: auto;
+    width: 100%;
+
+}
+
+.booking {
+    background-color: #1A1B1C;
+    font-family: "Dela Gothic One", serif;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 20%;
+}
+
+.booking::after {
+    position: absolute;
+    top: -9.9vw;
+    left: 0;
+    content: '';
+    height: 0;
+    width: 0;
+    border-left: 100vw solid #1A1B1C;
+    border-top: 10vw solid transparent;
+    border-bottom: 0px solid transparent;
+    overflow: hidden;
+}
+
+.booking-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    gap: 5%;
+    /* Optional for spacing between text and form */
+}
+
+.booking-text {
+    color: #FBFAF8;
+    font-family: "Rubik", serif;
+    max-width: 544px;
+}
+
+.booking h1 {
+    color: #FBFAF8;
+    font-size: 450%;
+    line-height: 90px;
+    padding-top: 3.7%;
+}
+
+.booking p {
+    color: #FBFAF8;
+    margin-top: 3%;
+    font-family: "Rubik", serif;
+    font-size: 18px;
+    margin-bottom: 6%;
+}
+
+.form-wrapper {
+    background-color: #FBFAF8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+select {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    background-color: #FF6214;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e95c0d;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .booking-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-wrapper {
+        max-width: 90%;
+    }
+}
+
+/* .hero video {
+    z-index: -10000;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.videooverlay::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0));
+
+} */
+
+.map .content {
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Rubik", serif;
+    margin-bottom: 100px;
+}
+
+.map .image img {
+    width: 90%;
+
+}
+
+.map .text {
+    max-width: 600px;
+}
+
+.map .text h1 {
+    font-size: 450%;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Dela Gothic One", serif;
+    line-height: 90px;
+
+
+}
+
+.map .text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+.trees {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.trees-text {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.tree-logo {
+    width: 150px;
+    height: auto;
+}
+
+.team .content-team {
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Rubik", serif;
+    margin-bottom: 100px;
+}
+
+.team .image-team img {
+    width: 90%;
+
+}
+
+.team .text-team {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.team .text-team h1 {
+    font-size: 450%;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Dela Gothic One", serif;
+    line-height: 90px;
+
+
+}
+
+.team .text-team p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+
+}

@@ -386,15 +386,29 @@ input[type="submit"]:focus {
     line-height: 1.6;
 }
 
-.language-dropdown {
+.nav .language-switcher {
     display: inline-block;
     margin-left: 20px;
-    /* Space between contact and the dropdown */
+    /* Space between contact and the flags */
 }
 
-.language-dropdown select {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.language-switcher ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.language-switcher li {
+    display: inline-block;
+}
+
+.language-switcher a {
+    display: block;
+    width: 30px;
+    /* Adjust width to fit flags */
+    height: 20px;
+    /* Adjust height to fit flags */
+    background-size: cover;
 }

@@ -35,18 +35,17 @@
     ));
     ?>
 
-    <!-- Language Dropdown -->
+    <!-- Language Flags Next to Contact -->
     <?php if (function_exists('pll_the_languages')): ?>
-        <div class="language-dropdown">
-            <select onchange="window.location.href=this.value;">
+        <div class="language-switcher">
+            <ul>
                 <?php
                 pll_the_languages(array(
-                    'show_flags' => 0,
-                    'show_names' => 1,
-                    'dropdown' => 1
+                    'show_flags' => 1,
+                    'show_names' => 0
                 ));
                 ?>
-            </select>
+            </ul>
         </div>
     <?php endif; ?>
 </div>

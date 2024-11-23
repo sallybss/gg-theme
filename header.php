@@ -27,15 +27,15 @@
     <?php
     wp_nav_menu( array(
         'theme_location' => 'primary-menu',
-        'container' => false, // No container (i.e., no <div> around the <ul>)
-        'items_wrap' => '<ul class="menu">%3$s</ul>', // Wrap items in <ul> tag with a class
+        'container' => false, // No container around <ul>
+        'items_wrap' => '<ul class="menu">%3$s</ul>',
         'fallback_cb' => function () {
             echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
         },
     ));
     ?>
-</div>
 
+    <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
         <div class="language-switcher">
             <ul>

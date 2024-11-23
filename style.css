@@ -12,44 +12,50 @@ body {
     background-color: #FBFAF8;
 }
 
+/* Navbar layout */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
-    /* Adjust padding for proper spacing */
+    padding: 0 20px;
+    /* Adjust padding to space items inside the navbar */
     font-family: "Rubik", serif;
-    z-index: 1;
-    position: relative;
     width: 100%;
-    /* Ensure full width */
     max-width: 1459px;
-    /* Constrain width to match the desired size */
+    /* Constrain width */
     margin: 0 auto;
-    /* Center the navbar horizontally */
+    /* Center navbar */
     height: 110px;
-    /* Adjust height to your requirement */
+    /* Adjust height */
+    background-color: #fff;
+    /* Ensure navbar has a background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for better separation */
 }
 
-/* Adjust the logo size */
+/* Logo styling */
 .nav .logo img {
     width: 150px;
-    /* Keep the logo size consistent */
+    /* Set a fixed width for logo */
     height: auto;
 }
 
-/* Adjust the menu items layout */
+/* Menu styling */
 ul.menu {
     list-style: none;
     display: flex;
     gap: 30px;
     margin: 0;
-    /* Remove any unwanted margin */
+    padding: 0;
+    /* Ensure no padding inside the menu */
+    background-color: transparent;
+    /* Ensure no background */
+    border: none;
+    /* Remove any border */
 }
 
 ul.menu li {
     color: rgb(26, 25, 25);
-    cursor: pointer;
 }
 
 ul.menu li a {
@@ -61,9 +67,10 @@ ul.menu li a {
 
 ul.menu li a:hover {
     color: #FF6214;
+    /* Hover color */
 }
 
-/* Language switcher styling */
+/* Language switcher */
 .language-switcher {
     display: flex;
     justify-content: center;
@@ -79,15 +86,15 @@ ul.menu li a:hover {
 
 .language-switcher ul li a {
     font-size: 14px;
-    /* Adjust size if needed */
     color: #333;
 }
 
 .language-switcher ul li a:hover {
     color: #FF6214;
+    /* Hover color */
 }
 
-/* Ensure the language flags are displayed correctly */
+/* Language flags styling */
 .language-switcher img {
     width: 24px;
     /* Adjust flag size */

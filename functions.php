@@ -19,11 +19,6 @@ function food_truck_theme_register_menus() {
 }
 add_action('after_setup_theme', 'food_truck_theme_register_menus');
 
-function register_custom_menus() {
-    register_nav_menu('primary-menu', 'Primary Navigation Menu');
-}
-add_action('after_setup_theme', 'register_custom_menus');
-
 function food_truck_theme_remove_gutenberg() {
     remove_post_type_support('page', 'editor');
 }

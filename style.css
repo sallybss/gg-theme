@@ -133,16 +133,15 @@ body {
 
 .booking-content {
     display: flex;
-    justify-content: space-between;
-    gap: 5%;
-    /* Optional for spacing between text and form */
+    padding: 0 10%;
+
+
 }
 
 .booking-text {
     color: #FBFAF8;
     font-family: "Rubik", serif;
-    max-width: 600px;
-    padding-left: 5.5%;
+    max-width: 544px;
 }
 
 .booking h1 {
@@ -177,7 +176,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Smaller gaps between fields */
+    margin-left: 200px;
 }
 
 input[type="text"],

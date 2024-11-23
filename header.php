@@ -34,18 +34,19 @@
         },
     ));
     ?>
-</div>
 
+    <!-- Language Dropdown -->
     <?php if (function_exists('pll_the_languages')): ?>
-        <div class="language-switcher">
-            <ul>
+        <div class="language-dropdown">
+            <select onchange="window.location.href=this.value;">
                 <?php
                 pll_the_languages(array(
-                    'show_flags' => 1,
-                    'show_names' => 0
+                    'show_flags' => 0,
+                    'show_names' => 1,
+                    'dropdown' => 1
                 ));
                 ?>
-            </ul>
+            </select>
         </div>
     <?php endif; ?>
 </div>

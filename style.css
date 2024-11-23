@@ -385,3 +385,16 @@ input[type="submit"]:focus {
     color: #555;
     line-height: 1.6;
 }
+
+.language-dropdown {
+    display: inline-block;
+    margin-left: 20px;
+    /* Space between contact and the dropdown */
+}
+
+.language-dropdown select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

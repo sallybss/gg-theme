@@ -18,25 +18,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    /* Adjust padding to space items inside the navbar */
     font-family: "Rubik", serif;
     width: 100%;
     max-width: 1459px;
-    /* Constrain width */
     margin: 0 auto;
-    /* Center navbar */
     height: 110px;
-    /* Adjust height */
-    background-color: #fff;
-    /* Ensure navbar has a background */
+    background-color: #FBFAF8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Add subtle shadow for better separation */
 }
 
 /* Logo styling */
 .nav .logo img {
     width: 150px;
-    /* Set a fixed width for logo */
     height: auto;
 }
 
@@ -47,11 +40,8 @@ ul.menu {
     gap: 30px;
     margin: 0;
     padding: 0;
-    /* Ensure no padding inside the menu */
     background-color: transparent;
-    /* Ensure no background */
     border: none;
-    /* Remove any border */
 }
 
 ul.menu li {
@@ -67,10 +57,8 @@ ul.menu li a {
 
 ul.menu li a:hover {
     color: #FF6214;
-    /* Hover color */
 }
 
-/* Language switcher */
 .language-switcher {
     display: flex;
     justify-content: center;
@@ -91,13 +79,10 @@ ul.menu li a:hover {
 
 .language-switcher ul li a:hover {
     color: #FF6214;
-    /* Hover color */
 }
 
-/* Language flags styling */
 .language-switcher img {
     width: 24px;
-    /* Adjust flag size */
     height: auto;
 }
 

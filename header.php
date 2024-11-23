@@ -11,16 +11,27 @@
 
 <div class="nav">
     <div class="logo">
-        <img src="images/logo_GG-01.png" alt="logo">
+        <?php
+        // Display the logo if the file exists
+        $logo_path = get_template_directory() . '/images/logo_GG-01.png';
+        if (file_exists($logo_path)): ?>
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo_GG-01.png" alt="<?php bloginfo('name'); ?> Logo">
+            </a>
+        <?php else: ?>
+            <p>Logo not found</p>
+        <?php endif; ?>
     </div>
 
+    <!-- WordPress Navigation Menu -->
     <?php
-    wp_nav_menu(array(
-        'theme_location' => 'main-menu',
-        'container' => 'ul', // This will output the menu directly as a <ul> (no <div>)
-        'menu_class' => '', // You can add a class if needed
-        'fallback_cb' => false, // If no menu is set, don't display anything
-        'depth' => 1, // If you have submenus, set this to the desired depth
+    wp_nav_menu( array(
+        'theme_location' => 'primary-menu',
+        'container' => false, // No container (i.e., no <div> around the <ul>)
+        'items_wrap' => '<ul class="menu">%3$s</ul>', // Wrap items in <ul> tag with a class
+        'fallback_cb' => function () {
+            echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+        },
     ));
     ?>
 </div>

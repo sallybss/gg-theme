@@ -29,9 +29,7 @@
         <!-- Hero Section -->
         <div class="hero">
     <?php 
-    // Make sure $herovideo is set
     if (isset($herovideo) && $herovideo): 
-        // Ensure $herovideoFileUrl is set and not empty
         if (isset($herovideoFileUrl) && !empty($herovideoFileUrl)): ?>
             <div class="videooverlay">
                 <video autoplay loop muted playsinline>

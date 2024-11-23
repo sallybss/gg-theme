@@ -16,33 +16,50 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 150px;
+    /* Same padding as in your second set */
+    font-family: "Rubik", serif;
+    /* Add the font-family for consistency */
+    z-index: 1;
+    /* Add z-index for positioning */
+    position: relative;
+    /* Position set to relative for layering purposes */
 }
 
-.logo img {
+.nav .logo img {
     width: 150px;
+    /* Same width as before */
     height: auto;
 }
 
 ul.menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    /* Same gap between menu items as in your second set */
 }
 
 ul.menu li {
-    display: inline-block;
+    color: rgb(26, 25, 25);
+    /* Same color for text */
+    cursor: pointer;
+    /* Set cursor to pointer for interactivity */
 }
 
 ul.menu li a {
     text-decoration: none;
+    /* Remove underlines from links */
     color: #333;
+    /* Set text color */
     font-size: 16px;
+    /* Set font size */
     padding: 10px;
+    /* Add padding around links */
 }
 
 ul.menu li a:hover {
     color: #FF6214;
+    /* Color on hover */
 }
 
 .hero {

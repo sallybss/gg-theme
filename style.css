@@ -350,7 +350,7 @@ input[type="submit"]:focus {
 
 .team .text-team {
     max-width: 600px;
-    margin-right: 20px;
+    padding: 50px;
 }
 
 .team .text-team h1 {

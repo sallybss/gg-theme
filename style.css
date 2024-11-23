@@ -16,33 +16,40 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
-    /* Reduce the padding */
+    padding: 0px 20px;
+    /* Adjust padding for proper spacing */
     font-family: "Rubik", serif;
     z-index: 1;
     position: relative;
+    width: 100%;
+    /* Ensure full width */
+    max-width: 1459px;
+    /* Constrain width to match the desired size */
+    margin: 0 auto;
+    /* Center the navbar horizontally */
     height: 110px;
-    /* Set the height explicitly */
-    max-width: 100%;
-    /* Ensure the navbar does not exceed the width of the container */
+    /* Adjust height to your requirement */
 }
 
+/* Adjust the logo size */
 .nav .logo img {
     width: 150px;
+    /* Keep the logo size consistent */
     height: auto;
 }
 
+/* Adjust the menu items layout */
 ul.menu {
     list-style: none;
     display: flex;
     gap: 30px;
-    /* Same gap between menu items as before */
+    margin: 0;
+    /* Remove any unwanted margin */
 }
 
 ul.menu li {
     color: rgb(26, 25, 25);
     cursor: pointer;
-    /* Adjust the size of menu items */
 }
 
 ul.menu li a {
@@ -54,6 +61,37 @@ ul.menu li a {
 
 ul.menu li a:hover {
     color: #FF6214;
+}
+
+/* Language switcher styling */
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-switcher ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.language-switcher ul li a {
+    font-size: 14px;
+    /* Adjust size if needed */
+    color: #333;
+}
+
+.language-switcher ul li a:hover {
+    color: #FF6214;
+}
+
+/* Ensure the language flags are displayed correctly */
+.language-switcher img {
+    width: 24px;
+    /* Adjust flag size */
+    height: auto;
 }
 
 .hero {

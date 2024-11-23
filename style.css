@@ -351,7 +351,8 @@ input[type="submit"]:focus {
 
 .team .text-team {
     max-width: 600px;
-    padding: 50px;
+    padding-left: 5.5%;
+
 
 }
 
@@ -361,8 +362,7 @@ input[type="submit"]:focus {
     margin-bottom: 20px;
     font-family: "Dela Gothic One", serif;
     line-height: 90px;
-
-
+    padding-right: 50px;
 }
 
 .team .text-team p {

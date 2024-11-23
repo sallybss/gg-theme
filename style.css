@@ -12,21 +12,11 @@ body {
     background-color: #FBFAF8;
 }
 
-/* Basic styles for the nav bar */
 .nav {
     display: flex;
     justify-content: space-between;
-    /* Pushes items to the sides: logo on the right, menu on the left */
     align-items: center;
     padding: 0 20px;
-}
-
-.logo {
-    flex: 1;
-    /* Pushes logo to the right */
-    display: flex;
-    justify-content: flex-end;
-    /* Aligns logo to the right */
 }
 
 .logo img {
@@ -34,19 +24,10 @@ body {
     height: auto;
 }
 
-.menu-container {
-    display: flex;
-    align-items: center;
-    /* Vertically align the items */
-}
-
 ul.menu {
     list-style: none;
     display: flex;
     gap: 20px;
-    /* Space between menu items */
-    margin-right: 20px;
-    /* Adds space between the menu and the language dropdown */
 }
 
 ul.menu li {
@@ -62,14 +43,6 @@ ul.menu li a {
 
 ul.menu li a:hover {
     color: #FF6214;
-}
-
-/* Language dropdown styles */
-.language-dropdown select {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .hero {

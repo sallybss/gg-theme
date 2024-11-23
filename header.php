@@ -13,10 +13,10 @@
     <div class="logo">
         <?php
         // Display the logo if the file exists
-        $logo_path = get_template_directory() . '/images/logo_GG-01.png';
+        $logo_path = get_template_directory() . '/images/logo1_GG.png';
         if (file_exists($logo_path)): ?>
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo_GG-01.png" alt="<?php bloginfo('name'); ?> Logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo1_GG.png" alt="<?php bloginfo('name'); ?> Logo">
             </a>
         <?php else: ?>
             <p>Logo not found</p>

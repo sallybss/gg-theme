@@ -6,10 +6,6 @@ $email = get_field("email");
 $cvr = get_field("cvr"); 
 $partner_text = get_field("partner_text"); 
 $partner_logo = get_field("partner_logo"); 
-
-$order_text = get_field("order_text"); 
-$order_link = get_field("order_link"); 
-
 $fb_link = get_field("facebook_link"); 
 $insta_link = get_field("instagram_link"); 
 ?>
@@ -38,12 +34,6 @@ $insta_link = get_field("instagram_link");
                    </a>
              <?php endif; ?>
             </div>
-        </div>
-
-        <!-- Middle Section -->
-        <div class="footer-middle">
-            <p><?php echo $order_text; ?></p>
-            <a href="<?php echo $order_link; ?>" class="order-link" target="_blank"><?php echo $order_link; ?></a>
         </div>
 
         <!-- Right Section -->

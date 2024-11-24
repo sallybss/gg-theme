@@ -22,6 +22,8 @@
     $team = get_field("team");
     $teamh1 = get_field("teamh1");
     $teamtext = get_field("team-text");
+    $booking1 = get_field("booking-img1");
+    $booking2 = get_field("booking-img2");
 
 
     ?>
@@ -67,7 +69,12 @@
                     <p><?php echo  $bookingtext; ?></p>
                 </div>
 
-                
+                <div class="booking-img">
+                <img src="<?php echo $booking1["url"]; ?>" alt="collage image" class="intro" >
+                <img src="<?php echo $booking2["url"]; ?>" alt="collage image" class="intro" >
+                </div>
+
+
         <div class="contact-form">
             <div class="form-wrapper">
                 <?php echo do_shortcode('[contact-form-7 id="ffa9568" title="Booking"]'); ?>

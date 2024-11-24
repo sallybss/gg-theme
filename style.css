@@ -202,6 +202,11 @@ ul.menu li a:hover {
     margin-bottom: 6%;
 }
 
+.booking-img img {
+    width: 800px;
+    height: auto;
+}
+
 .form-wrapper {
     background-color: #232424;
     padding: 30px;

@@ -151,7 +151,7 @@ ul.menu li a:hover {
 }
 
 
-.booking {
+#booking {
     background-color: #1A1B1C;
     font-family: "Dela Gothic One", serif;
     width: 100vw;
@@ -160,7 +160,7 @@ ul.menu li a:hover {
     padding-bottom: 20%;
 }
 
-.booking::after {
+#booking::after {
     position: absolute;
     top: -9.9vw;
     left: 0;
@@ -173,7 +173,7 @@ ul.menu li a:hover {
     overflow: hidden;
 }
 
-.booking-content {
+#booking-content {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
@@ -181,20 +181,20 @@ ul.menu li a:hover {
     /* Optional for spacing between text and form */
 }
 
-.booking-text {
+#booking-text {
     color: #FBFAF8;
     font-family: "Dela Gothic One", serif;
     max-width: 544px;
 }
 
-.booking h1 {
+#booking h1 {
     color: #FBFAF8;
     font-size: 450%;
     line-height: 90px;
     padding-top: 3.7%;
 }
 
-.booking p {
+#booking p {
     color: #FBFAF8;
     margin-top: 3%;
     font-family: "Rubik", serif;

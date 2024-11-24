@@ -59,7 +59,7 @@
         </div>
 
         <!-- Booking Section -->
-        <div class="booking">
+        <div id="booking">
             <div class="booking-content">
                 <div class="booking-text">
                 <h1><?php echo  $bookingheadline; ?></h1>

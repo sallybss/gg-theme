@@ -67,12 +67,15 @@
                 <div class="booking-text">
                 <h1><?php echo  $bookingheadline; ?></h1>
                     <p><?php echo  $bookingtext; ?></p>
-                </div>
+
 
                 <div class="booking-img">
                 <img src="<?php echo $booking1["url"]; ?>" alt="collage image" class="intro" >
                 <img src="<?php echo $booking2["url"]; ?>" alt="collage image" class="intro" >
                 </div>
+                
+                </div>
+
 
 
         <div class="contact-form">

@@ -151,7 +151,7 @@ ul.menu li a:hover {
 }
 
 
-#booking {
+.booking {
     background-color: #1A1B1C;
     font-family: "Dela Gothic One", serif;
     width: 100vw;
@@ -160,7 +160,7 @@ ul.menu li a:hover {
     padding-bottom: 20%;
 }
 
-#booking::after {
+.booking::after {
     position: absolute;
     top: -9.9vw;
     left: 0;
@@ -173,7 +173,7 @@ ul.menu li a:hover {
     overflow: hidden;
 }
 
-#booking-content {
+.booking-content {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
@@ -181,20 +181,20 @@ ul.menu li a:hover {
     /* Optional for spacing between text and form */
 }
 
-#booking-text {
+.booking-text {
     color: #FBFAF8;
     font-family: "Dela Gothic One", serif;
     max-width: 544px;
 }
 
-#booking h1 {
+.booking h1 {
     color: #FBFAF8;
     font-size: 450%;
     line-height: 90px;
     padding-top: 3.7%;
 }
 
-#booking p {
+.booking p {
     color: #FBFAF8;
     margin-top: 3%;
     font-family: "Rubik", serif;
@@ -202,7 +202,7 @@ ul.menu li a:hover {
     margin-bottom: 6%;
 }
 
-#booking .form-wrapper {
+.form-wrapper {
     background-color: #232424;
     padding: 30px;
     border-radius: 15px;
@@ -212,7 +212,7 @@ ul.menu li a:hover {
     flex: 1;
 }
 
-#booking form {
+form {
     display: flex;
     flex-direction: column;
 
@@ -232,25 +232,25 @@ select {
     box-sizing: border-box;
 }
 
-#booking textarea {
+textarea {
     resize: vertical;
     height: 150px;
 }
 
-#booking form label {
+form label {
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
     color: #FBFAF8;
 }
 
-#booking select {
+select {
     padding: 14px;
     font-size: 16px;
     border-radius: 8px;
 }
 
-#booking input[type="submit"] {
+input[type="submit"] {
     background-color: #FF6214;
     color: white;
     border: none;
@@ -261,11 +261,11 @@ select {
     transition: background-color 0.3s ease;
 }
 
-#booking input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #e95c0d;
 }
 
-#booking input[type="submit"]:focus {
+input[type="submit"]:focus {
     outline: none;
 }
 

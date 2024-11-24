@@ -59,7 +59,8 @@
         </div>
 
         <!-- Booking Section -->
-        <div id="booking">
+         <div id="bookings">
+        <div class="booking">
             <div class="booking-content">
                 <div class="booking-text">
                 <h1><?php echo  $bookingheadline; ?></h1>
@@ -73,6 +74,7 @@
             </div>
         </div>
             </div>
+        </div>
         </div>
 
         <div class="team">

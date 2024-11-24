@@ -202,7 +202,7 @@ ul.menu li a:hover {
     margin-bottom: 6%;
 }
 
-.form-wrapper {
+#booking .form-wrapper {
     background-color: #232424;
     padding: 30px;
     border-radius: 15px;
@@ -212,7 +212,7 @@ ul.menu li a:hover {
     flex: 1;
 }
 
-form {
+#booking form {
     display: flex;
     flex-direction: column;
 
@@ -232,25 +232,25 @@ select {
     box-sizing: border-box;
 }
 
-textarea {
+#booking textarea {
     resize: vertical;
     height: 150px;
 }
 
-form label {
+#booking form label {
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
     color: #FBFAF8;
 }
 
-select {
+#booking select {
     padding: 14px;
     font-size: 16px;
     border-radius: 8px;
 }
 
-input[type="submit"] {
+#booking input[type="submit"] {
     background-color: #FF6214;
     color: white;
     border: none;
@@ -261,11 +261,11 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+#booking input[type="submit"]:hover {
     background-color: #e95c0d;
 }
 
-input[type="submit"]:focus {
+#booking input[type="submit"]:focus {
     outline: none;
 }
 

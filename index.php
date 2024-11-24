@@ -54,7 +54,7 @@
        </div>
 
         <!-- Menu Section -->
-        <div class="menu">
+        <div id="menu">
         <img src="<?php echo $menu["url"]; ?>" alt="menu image" class="menu" >
         </div>
 

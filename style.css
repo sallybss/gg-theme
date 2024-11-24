@@ -138,13 +138,13 @@ ul.menu li a:hover {
     padding-right: 20%;
 }
 
-.menu {
+#menu {
     padding: 6%;
     background-color: #FBFAF8;
     margin-bottom: 6%;
 }
 
-.menu img {
+#menu img {
     height: auto;
     width: 100%;
 

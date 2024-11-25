@@ -20,9 +20,17 @@ $ww_link = get_field("ww_link");
             </div>
             <div class="footer-text">
                 <p><?php echo $address; ?></p>
-                <p>Tlf: <?php echo $phone; ?><br><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
+                <p>
+                    Tlf: <?php echo $phone; ?><br>
+                    <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                </p>
+                <!-- Website Link -->
+                <p>
+                    <a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website">
+                        <?php echo $ww_link; ?>
+                    </a>
+                </p>
                 <p>CVR: <?php echo $cvr; ?></p>
-               <p><a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website"></a></p> 
             </div>
             <div class="social-icons">
                   <?php if ($fb_link): ?>

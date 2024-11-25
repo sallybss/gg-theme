@@ -529,6 +529,19 @@ input[type="submit"]:focus {
     color: #777;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF6214;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
     .footer-top {
         flex-direction: column;

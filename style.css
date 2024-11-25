@@ -502,6 +502,8 @@ input[type="submit"]:focus {
 
 .social-icons {
     margin-top: 10px;
+    margin-left: 16%;
+
 }
 
 .social-icons a img {

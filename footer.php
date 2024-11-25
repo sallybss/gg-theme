@@ -22,7 +22,7 @@ $ww_link = get_field("ww_link");
                 <p><?php echo $address; ?></p>
                 <p>Tlf: <?php echo $phone; ?><br><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
                 <p>CVR: <?php echo $cvr; ?></p>
-                <p><a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website"></p>
+               <p><a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website"></a></p> 
             </div>
             <div class="social-icons">
                   <?php if ($fb_link): ?>

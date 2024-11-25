@@ -10,6 +10,7 @@
     $menu = get_field("menu");
     $bookingheadline = get_field("bookingh1");
     $bookingtext = get_field("bookingtext");
+    $bookingtext2 = get_field("bookingtext2");
     $herovideo = get_field("video");
     $herovideoFileName = $herovideo['filename'];
     $herovideoFileUrl = $herovideo['url'];
@@ -67,13 +68,14 @@
                 <div class="booking-text">
                 <h1><?php echo  $bookingheadline; ?></h1>
                     <p><?php echo  $bookingtext; ?></p>
+                    <p><?php echo  $bookingtext2; ?></p>
 
 
                 <div class="booking-img">
                 <img src="<?php echo $booking1["url"]; ?>" alt="collage image" class="intro" >
                 <img src="<?php echo $booking2["url"]; ?>" alt="collage image" class="intro" >
                 </div>
-                
+
                 </div>
 
 

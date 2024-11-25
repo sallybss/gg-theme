@@ -8,6 +8,7 @@ $partner_text = get_field("partner_text");
 $partner_logo = get_field("partner_logo"); 
 $fb_link = get_field("facebook_link"); 
 $insta_link = get_field("instagram_link"); 
+$ww_link = get_field("ww_link"); 
 ?>
 
 <footer class="footer">
@@ -21,6 +22,7 @@ $insta_link = get_field("instagram_link");
                 <p><?php echo $address; ?></p>
                 <p>Tlf: <?php echo $phone; ?><br><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
                 <p>CVR: <?php echo $cvr; ?></p>
+                <a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website">
             </div>
             <div class="social-icons">
                   <?php if ($fb_link): ?>

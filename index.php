@@ -70,6 +70,12 @@
                     <p><?php echo  $bookingtext; ?></p>
                     <p><?php echo  $bookingtext2; ?></p>
 
+
+                <div class="booking-img">
+                <img src="<?php echo $booking1["url"]; ?>" alt="collage image" class="intro" >
+
+                </div>
+
                 </div>
 
 

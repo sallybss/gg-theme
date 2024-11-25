@@ -157,7 +157,7 @@ ul.menu li a:hover {
     width: 100vw;
     position: relative;
     z-index: 0;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
 }
 
 .booking::after {

@@ -664,7 +664,7 @@ footer a:hover {
         font-size: 250%;
     }
 
-    .from wrapper {
+    .form-wrapper {
         flex-direction: column;
         align-items: center;
 
@@ -679,9 +679,8 @@ footer a:hover {
         font-size: 120%;
     }
 
-    .footer .footer-left {
-
-        margin-bottom: 20px;
+    .footer-right .nuento-partner {
+        margin-left: 20px;
     }
 
     .footer .footer-left .footer-logo img {
@@ -692,6 +691,7 @@ footer a:hover {
         width: 80%;
         margin: 0 auto;
     }
+
 }
 
 @media (max-width: 480px) {

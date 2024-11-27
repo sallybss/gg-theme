@@ -362,24 +362,30 @@ input[type="submit"]:focus {
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0));
     z-index: 2;
+    /* Above the image but behind text/logo */
 }
 
+/* Text styling */
 .trees-text {
     position: relative;
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
     z-index: 3;
+    /* Above the overlay */
 }
 
+/* Logo container styling */
 .logo-container {
     position: relative;
     z-index: 3;
+    /* Above the overlay */
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
+/* Logo image styling */
 .tree-logo {
     width: 150px;
     height: auto;
@@ -391,16 +397,14 @@ input[type="submit"]:focus {
     margin-bottom: 150px;
 }
 
-.col-md-6 {
-    margin-left: 5%;
-}
-
 .team .content-team {
     display: flex;
     flex-wrap: wrap;
+    /* Ensures responsiveness for small screens */
     max-width: 1250px;
     font-family: "Rubik", serif;
     margin: 0 auto;
+    /* Centers the content */
 }
 
 .image-team img {
@@ -415,6 +419,7 @@ input[type="submit"]:focus {
 
 .team .text-team h1 {
     font-size: 450%;
+    /* Responsive font size */
     color: #333;
     margin-bottom: 20px;
     font-family: "Dela Gothic One", serif;
@@ -424,6 +429,7 @@ input[type="submit"]:focus {
 
 .team .text-team p {
     font-size: 1.125rem;
+    /* Responsive font size (18px) */
     color: #555;
     line-height: 1.6;
 }

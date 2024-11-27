@@ -724,7 +724,7 @@ footer a:hover {
         height: 300px;
     }
 
-    /* .nav {
+    .nav {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
@@ -733,7 +733,7 @@ footer a:hover {
     .nav ul {
         align-items: flex-start;
         text-align: left;
-    } */
+    }
 
     .booking-content {
         padding: 10px;

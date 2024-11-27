@@ -617,6 +617,14 @@ footer a:hover {
     .hero {
         height: 500px;
     }
+
+    .booking-img img {
+        width: 100px;
+        height: auto;
+        margin-top: 5%;
+    }
+
+
 }
 
 @media (max-width: 768px) {

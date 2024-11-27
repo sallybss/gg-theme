@@ -706,6 +706,7 @@ footer a:hover {
     .team .text-team h1 {
         font-size: 250%;
         line-height: 100%;
+        padding-left: 50px;
     }
 
 }

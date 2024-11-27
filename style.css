@@ -414,6 +414,10 @@ input[type="submit"]:focus {
     padding-right: 8%;
 }
 
+.image-team {
+    max-width: 600px;
+}
+
 .team .text-team h1 {
     font-size: 450%;
     color: #333;

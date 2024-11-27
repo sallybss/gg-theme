@@ -23,12 +23,7 @@
         <?php endif; ?>
     </div>
 
-    <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
-    <label for="hamburger-toggle" class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+    
 
     <!-- WordPress Navigation Menu -->
     <?php

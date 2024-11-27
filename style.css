@@ -561,6 +561,10 @@ footer a:hover {
         padding: 0;
     }
 
+    .booking-text {
+        padding: 5%;
+    }
+
     .contact-form {
         width: 100%;
     }
@@ -617,7 +621,7 @@ footer a:hover {
     }
 
     .booking-img img {
-        width: 100px;
+        width: 40px;
         height: auto;
         margin-top: 5%;
     }

@@ -399,7 +399,7 @@ input[type="submit"]:focus {
 
 .team .content-team {
     display: flex;
-    max-width: 600px;
+    max-width: 1250px;
     font-family: "Rubik", serif;
 }
 
@@ -414,9 +414,6 @@ input[type="submit"]:focus {
     padding-right: 8%;
 }
 
-.image-team {
-    max-width: 600px;
-}
 
 .team .text-team h1 {
     font-size: 450%;

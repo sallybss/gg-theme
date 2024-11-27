@@ -89,14 +89,23 @@
         </div>
         </div>
 
-        <div class="team">
-    <div class="content-team">
-        <div class="text-team">
-            <h1><?php echo  $teamh1; ?></h1>
-            <p><?php echo  $teamtext; ?></p>
+        <div class="container team">
+    <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-6">
+            <div class="text-team">
+                <h1><?php echo htmlspecialchars($teamh1); ?></h1>
+                <p><?php echo htmlspecialchars($teamtext); ?></p>
+            </div>
         </div>
-        <div class="image-team">
-        <img src="<?php echo $team["url"]; ?>" alt="team image" class="image-team" >
+
+        <!-- Image Column -->
+        <div class="col-md-6">
+            <div class="image-team text-center">
+                <img src="<?php echo htmlspecialchars($team['url']); ?>" 
+                     alt="<?php echo htmlspecialchars(isset($team['alt']) ? $team['alt'] : 'Team image'); ?>" 
+                     class="img-fluid">
+            </div>
         </div>
     </div>
 </div>

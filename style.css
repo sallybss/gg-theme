@@ -573,7 +573,7 @@ footer a:hover {
     .map .content {
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
     }
 
     .map .image img {
@@ -629,7 +629,7 @@ footer a:hover {
     .content-team {
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
     }
 
     .image-team {
@@ -672,7 +672,7 @@ footer a:hover {
         font-size: 250%;
     }
 
-    .from-wrapper {
+    .from wrapper {
         flex-direction: column;
         align-items: center;
 

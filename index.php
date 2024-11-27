@@ -96,7 +96,7 @@
             <p><?php echo  $teamtext; ?></p>
         </div>
         <div class="image-team">
-        <img src="<?php echo $team["url"]; ?>" alt="team image" class="team" >
+        <img src="<?php echo $team["url"]; ?>" alt="team image" class="image-team" >
         </div>
     </div>
 </div>

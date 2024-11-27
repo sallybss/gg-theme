@@ -543,14 +543,6 @@ footer a:hover {
 }
 
 
-@media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
 @media (max-width: 1400px) {
     .nav {
         padding: 0px 50px;

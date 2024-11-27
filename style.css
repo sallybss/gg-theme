@@ -660,8 +660,7 @@ footer a:hover {
     }
 
     .form-wrapper {
-        flex-direction: column;
-        align-items: center;
+        width: 50%;
 
     }
 

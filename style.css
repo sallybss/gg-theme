@@ -679,17 +679,13 @@ footer a:hover {
         font-size: 120%;
     }
 
-    .footer-right .nuento-partner {
-        margin-left: 20px;
-    }
-
     .footer .footer-left .footer-logo img {
         margin: 0 auto;
     }
 
     .footer .footer-right img {
         width: 80%;
-        margin: 0 auto;
+        margin-left: 20px;
     }
 
 }

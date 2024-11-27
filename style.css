@@ -301,11 +301,6 @@ input[type="submit"]:focus {
 
 .map .image img {
     width: 90%;
-
-}
-
-.map .image img {
-    width: 90%;
     height: auto;
 
 }
@@ -331,8 +326,6 @@ input[type="submit"]:focus {
 
 }
 
-/* Container for the entire section */
-/* Container for the entire section */
 .trees {
     position: relative;
     width: 100%;
@@ -408,7 +401,7 @@ input[type="submit"]:focus {
 }
 
 .team .image-team img {
-    width: 20%;
+    width: 120%;
     margin-left: 28%;
 
 }

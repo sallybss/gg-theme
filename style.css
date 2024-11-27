@@ -411,7 +411,7 @@ input[type="submit"]:focus {
 }
 
 .team .text-team {
-    max-width: 600px;
+    /* max-width: 600px; */
     padding-left: 5.5%;
 }
 

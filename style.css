@@ -634,10 +634,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .nav ul {
+    /* .nav ul {
         flex-direction: column;
         gap: 10px;
-    }
+    } */
 
     .intro h1 {
         font-size: 200%;

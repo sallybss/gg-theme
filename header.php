@@ -37,16 +37,17 @@
 
     <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
-    <div class="language-switcher">
-        <?php
-        echo pll_the_languages(array(
-            'show_flags' => 1,
-            'show_names' => 0,
-            'hide_if_empty' => false, // Ensures it always displays
-        ));
-        ?>
-    </div>
-<?php endif; ?>
+        <div class="language-switcher">
+            <ul>
+                <?php
+                pll_the_languages(array(
+                    'show_flags' => 1,
+                    'show_names' => 0
+                ));
+                ?>
+            </ul>
+        </div>
+    <?php endif; ?>
 </div>
 
 <?php wp_footer(); ?>

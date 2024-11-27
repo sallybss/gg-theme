@@ -557,10 +557,6 @@ footer a:hover {
         width: 100%;
     }
 
-    .map .content {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .map .image img {
         width: 60%;

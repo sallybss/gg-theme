@@ -410,8 +410,6 @@ input[type="submit"]:focus {
 .image-team img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    /* Optional: add a smooth border */
 }
 
 .team .text-team {
@@ -623,16 +621,6 @@ footer a:hover {
         text-align: center;
     }
 
-    .image-team {
-        width: 60%;
-        margin-right: 28%;
-    }
-
-    .text-team {
-        max-width: 100%;
-        padding: 10%;
-    }
-
     .map .content {
         flex-direction: column;
         align-items: center;
@@ -674,6 +662,27 @@ footer a:hover {
         line-height: 100%;
     }
 
+    .team {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .team .text-team {
+        padding: 0 15px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .team .text-team h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .team .text-team p {
+        font-size: 1rem;
+    }
+
     .trees h1.trees-text {
         font-size: 120%;
     }
@@ -691,21 +700,6 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .image-team {
-        width: 80%;
-        margin-right: 28%;
-    }
-
-    .text-team {
-        max-width: 100%;
-    }
-
-    .team .text-team h1 {
-        font-size: 250%;
-        line-height: 100%;
-        padding-left: 50px;
     }
 
     .booking-img img {

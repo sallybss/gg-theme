@@ -574,11 +574,12 @@ footer a:hover {
     }
 
     .map .image img {
-        width: 100%;
+        width: 60%;
     }
 
     .map .text {
         max-width: 100%;
+        padding: 10%;
     }
 
     .trees h1.trees-text {
@@ -600,12 +601,11 @@ footer a:hover {
     }
 
     .footer .footer-left {
-        text-align: center;
+
         margin-bottom: 20px;
     }
 
     .footer .footer-left .footer-logo img {
-        width: 100px;
         margin: 0 auto;
     }
 
@@ -647,6 +647,7 @@ footer a:hover {
 
     .map .text h1 {
         font-size: 250%;
+        line-height: 100%;
     }
 
     .trees h1.trees-text {

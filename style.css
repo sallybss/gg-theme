@@ -655,12 +655,6 @@ footer a:hover {
         margin-left: 10px;
     }
 
-    .form {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-    }
-
     .contact-form input,
     .contact-form textarea {
         font-size: 14px;
@@ -715,6 +709,10 @@ footer a:hover {
         padding-left: 50px;
     }
 
+    .booking-img img {
+        height: auto;
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {

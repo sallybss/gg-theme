@@ -688,6 +688,22 @@ footer a:hover {
         margin-left: 20px;
     }
 
+    .content-team {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-team {
+        width: 80%;
+        margin-right: 28%;
+    }
+
+    .text-team {
+        max-width: 100%;
+        padding: 10%;
+    }
+
 }
 
 @media (max-width: 480px) {

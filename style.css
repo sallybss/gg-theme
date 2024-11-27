@@ -755,4 +755,8 @@ footer a:hover {
     .trees h1.trees-text {
         font-size: 100%;
     }
+
+    .hero {
+        height: 200px;
+    }
 }

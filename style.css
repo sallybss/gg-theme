@@ -413,6 +413,7 @@ input[type="submit"]:focus {
 .team .text-team {
     /* max-width: 600px; */
     padding-left: 5.5%;
+    padding-right: 10%;
 }
 
 .team .text-team h1 {

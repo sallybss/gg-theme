@@ -400,6 +400,15 @@ input[type="submit"]:focus {
     margin-bottom: 150px;
 }
 
+.team .content-team {
+    display: flex;
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: "Rubik", serif;
+    margin-bottom: 150px;
+}
+
 .team .image-team img {
     width: 200%;
     height: auto;

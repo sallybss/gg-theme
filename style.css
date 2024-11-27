@@ -639,6 +639,7 @@ footer a:hover {
     }
 
 
+
 }
 
 @media (max-width: 768px) {
@@ -665,6 +666,13 @@ footer a:hover {
 
     .booking h1 {
         font-size: 250%;
+    }
+
+    .booking-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Adjust gap to prevent crowding */
     }
 
     .map .text h1 {
@@ -699,6 +707,13 @@ footer a:hover {
 
     .booking-content {
         padding: 10px;
+    }
+
+    .booking-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Adjust gap to prevent crowding */
     }
 
     .contact-form {

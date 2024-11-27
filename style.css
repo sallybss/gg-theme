@@ -402,6 +402,7 @@ input[type="submit"]:focus {
 
 .team .image-team img {
     width: 200%;
+    height: auto;
 
 
 }

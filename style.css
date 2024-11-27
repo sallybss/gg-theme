@@ -712,6 +712,11 @@ footer a:hover {
         text-align: center;
         margin-bottom: 20px;
     }
+
+    .videooverlay::after {
+        display: none;
+    }
+
 }
 
 @media (max-width: 480px) {

@@ -764,4 +764,15 @@ footer a:hover {
     .booking-img img {
         display: none;
     }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav ul {
+        align-items: flex-start;
+        text-align: left;
+    }
 }

@@ -34,7 +34,6 @@
         },
     ));
     ?>
-
     <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
         <div class="language-switcher">

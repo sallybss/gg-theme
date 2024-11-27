@@ -713,8 +713,9 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
-    .videooverlay::after {
-        display: none;
+
+    .hero {
+        background-color: #1A1B1C;
     }
 
 }

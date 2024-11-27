@@ -286,10 +286,6 @@ input[type="submit"]:focus {
         text-align: center;
         margin-bottom: 20px;
     }
-
-    .form-wrapper {
-        max-width: 90%;
-    }
 }
 
 

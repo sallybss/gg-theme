@@ -550,7 +550,7 @@ footer a:hover {
     }
 
     .booking-text {
-        padding: 5%;
+        padding-left: 5%;
     }
 
     .contact-form {
@@ -661,6 +661,7 @@ footer a:hover {
 
     .form-wrapper {
         width: 120%;
+        padding-left: 10%;
 
     }
 

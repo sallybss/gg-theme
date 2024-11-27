@@ -304,6 +304,12 @@ input[type="submit"]:focus {
 
 }
 
+.map .image img {
+    width: 90%;
+    height: auto;
+
+}
+
 .map .text {
     max-width: 600px;
 }

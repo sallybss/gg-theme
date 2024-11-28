@@ -15,56 +15,35 @@ body {
 
 /* Sidebar Styles */
 .side-menu {
+    height: 100%;
+    width: 0;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
-    /* Full height */
-    width: 0;
-    /* Initially hidden */
-    background-color: #333;
-    /* Sidebar background color */
+    background-color: #1a1b1cc0;
     overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.3s;
-    /* Smooth toggle effect */
-    display: flex;
+    transition: 0.5s;
+    padding-top: 60px;
     flex-direction: column;
     /* Stack links in a column */
     justify-content: flex-start;
     /* Align links at the top */
     align-items: flex-start;
     /* Align links to the left */
-    padding: 20px;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-    /* Optional shadow */
 }
 
-/* Links inside the sidebar */
 .side-menu a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #fff;
-    /* Link text color */
-    font-size: 18px;
-    /* Adjust font size */
-    margin: 10px 0;
-    /* Add spacing between links */
-    padding: 10px 0;
-    /* Adjust padding around each link */
-    width: 100%;
-    /* Make links span full width */
-    text-align: left;
-    /* Align text to the left */
-    transition: 0.2s ease-in-out;
-    /* Smooth hover effect */
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
 }
 
-/* Hover Effect for Links */
 .side-menu a:hover {
-    background-color: #555;
-    /* Change background on hover */
-    border-radius: 5px;
-    /* Optional: Rounded edges */
+    color: #f1f1f1;
 }
 
 .side-menu .closebtn {

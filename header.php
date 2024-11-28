@@ -53,6 +53,21 @@
         ));
         ?>
     </div>
+
+    <!-- Language Switcher -->
+    <?php if (function_exists('pll_the_languages')): ?>
+        <div class="language-switcher">
+            <ul>
+                <?php
+                pll_the_languages(array(
+                    'show_flags' => 1,
+                    'show_names' => 0
+                ));
+                ?>
+            </ul>
+        </div>
+    <?php endif; ?>
+    
 </div>
 
 <?php wp_footer(); ?>

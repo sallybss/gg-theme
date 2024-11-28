@@ -12,7 +12,6 @@ body {
     background-color: #FBFAF8;
 }
 
-/* Navbar layout */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -277,19 +276,6 @@ input[type="submit"]:focus {
     outline: none;
 }
 
-/* @media (max-width: 768px) {
-    .booking-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .booking-text {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-} */
-
-
 .map .content {
     display: flex;
     max-width: 1250px;
@@ -339,7 +325,6 @@ input[type="submit"]:focus {
     background-position: center;
 }
 
-/* Overlay for the black opacity */
 .image-overlay {
     position: absolute;
     top: 0;
@@ -350,10 +335,8 @@ input[type="submit"]:focus {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    /* Behind content */
 }
 
-/* Apply a gradient overlay using ::after */
 .image-overlay::after {
     content: "";
     position: absolute;
@@ -362,49 +345,78 @@ input[type="submit"]:focus {
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0));
     z-index: 2;
-    /* Above the image but behind text/logo */
 }
 
-/* Text styling */
 .trees-text {
     position: relative;
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
     z-index: 3;
-    /* Above the overlay */
 }
 
-/* Logo container styling */
 .logo-container {
     position: relative;
     z-index: 3;
-    /* Above the overlay */
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-/* Logo image styling */
 .tree-logo {
     width: 150px;
     height: auto;
 }
 
-.team {
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-}
 
 .team .content-team {
     display: flex;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Rubik", serif;
+    margin-bottom: 100px;
+}
+
+.team .image-team img {
+    width: 90%;
+    height: auto;
+
+}
+
+.team .text-team {
+    max-width: 600px;
+}
+
+.team .text-team h1 {
+    font-size: 450%;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Dela Gothic One", serif;
+    line-height: 90px;
+
+
+}
+
+.team .text-team p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+/* .team {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+} */
+
+/* .team .content-team {
+    display: flex;
     flex-wrap: wrap;
-    /* Ensures responsiveness for small screens */
     max-width: 1250px;
     font-family: "Rubik", serif;
     margin: 0 auto;
-    /* Centers the content */
 }
 
 .image-team img {
@@ -419,7 +431,6 @@ input[type="submit"]:focus {
 
 .team .text-team h1 {
     font-size: 450%;
-    /* Responsive font size */
     color: #333;
     margin-bottom: 20px;
     font-family: "Dela Gothic One", serif;
@@ -429,10 +440,9 @@ input[type="submit"]:focus {
 
 .team .text-team p {
     font-size: 1.125rem;
-    /* Responsive font size (18px) */
     color: #555;
     line-height: 1.6;
-}
+} */
 
 .hero video {
     z-index: -10000;
@@ -574,6 +584,27 @@ footer a:hover {
         padding: 10%;
     }
 
+    .team .content-team {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team .image-team img {
+        width: 60%;
+    }
+
+    .team .text-team {
+        max-width: 100%;
+        padding: 10%;
+    }
+
+    .team .content-team {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .trees h1.trees-text {
         font-size: 150%;
         padding: 10px;
@@ -615,18 +646,7 @@ footer a:hover {
         margin-top: 70%;
     }
 
-    .content-team {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-
-    .map .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
 
 
@@ -663,6 +683,12 @@ footer a:hover {
         line-height: 100%;
     }
 
+    .team .text-team h1 {
+        font-size: 250%;
+        line-height: 100%;
+    }
+
+    /* 
     .team {
         margin-left: 20px;
         margin-right: 20px;
@@ -672,7 +698,6 @@ footer a:hover {
 
     .team .text-team {
         padding: 0 15px;
-        /* Reduce padding on smaller screens */
     }
 
     .team .text-team h1 {
@@ -686,20 +711,16 @@ footer a:hover {
 
     .team .row {
         flex-direction: column;
-        /* Stack elements vertically */
         align-items: center;
-        /* Center the content */
     }
 
     .team .col-md-6 {
         flex: 1;
-        /* Make both columns take full width */
     }
 
     .team .text-team {
         text-align: center;
-        /* Center the text */
-    }
+    } */
 
     .trees h1.trees-text {
         font-size: 120%;
@@ -714,11 +735,11 @@ footer a:hover {
         margin-left: 20px;
     }
 
-    .content-team {
+    /* .content-team {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
+    } */
 
     .booking-img img {
         display: none;

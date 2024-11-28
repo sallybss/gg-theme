@@ -80,6 +80,34 @@ body {
         /* Hide default navigation links */
     }
 
+    .nav ul {
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 15px;
+        /* Adjust gap between links */
+        align-items: flex-start;
+        /* Align links to the left */
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        /* Optional: Make it span full width */
+        text-align: left;
+        /* Align text within the links to the left */
+    }
+
+    /* Adjust list items (if needed) */
+    .nav ul li {
+        width: 100%;
+        /* Make each item span full width */
+    }
+
+    /* Center align links inside their column */
+    .nav ul li a {
+        padding: 10px 15px;
+        /* Add padding for better click area */
+        display: block;
+        /* Ensure links behave like block elements */
+    }
 
 }
 

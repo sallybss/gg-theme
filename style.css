@@ -621,6 +621,7 @@ footer a:hover {
         text-align: center;
     }
 
+
     .map .content {
         flex-direction: column;
         align-items: center;
@@ -681,6 +682,23 @@ footer a:hover {
 
     .team .text-team p {
         font-size: 1rem;
+    }
+
+    .team .row {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center the content */
+    }
+
+    .team .col-md-6 {
+        flex: 1;
+        /* Make both columns take full width */
+    }
+
+    .team .text-team {
+        text-align: center;
+        /* Center the text */
     }
 
     .trees h1.trees-text {

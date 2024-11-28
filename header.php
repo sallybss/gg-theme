@@ -10,11 +10,7 @@
 <body <?php body_class(); ?>>
 
 <div class="nav">
-<div class="hamburger-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+
     <div class="logo">
         <?php
         // Display the logo if the file exists
@@ -28,7 +24,11 @@
         <?php endif; ?>
     </div>
 
-    
+    <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <!-- WordPress Navigation Menu -->
     <?php

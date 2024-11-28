@@ -10,7 +10,6 @@
 <body <?php body_class(); ?>>
 
 <div class="nav">
-
     <div class="logo">
         <?php
         // Display the logo if the file exists
@@ -23,28 +22,19 @@
             <p>Logo not found</p>
         <?php endif; ?>
     </div>
+    
 
-    <!-- Hamburger Menu Icon -->
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="menu-container">
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'primary-menu',
-            'container' => false,
-            'items_wrap' => '<ul class="menu">%3$s</ul>',
-            'fallback_cb' => function () {
-                echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
-            },
-        ));
-        ?>
-    </div>
-
+    <!-- WordPress Navigation Menu -->
+    <?php
+    wp_nav_menu( array(
+        'theme_location' => 'primary-menu',
+        'container' => false, // No container around <ul>
+        'items_wrap' => '<ul class="menu">%3$s</ul>',
+        'fallback_cb' => function () {
+            echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+        },
+    ));
+    ?>
     <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
         <div class="language-switcher">
@@ -58,7 +48,6 @@
             </ul>
         </div>
     <?php endif; ?>
-
 </div>
 
 <?php wp_footer(); ?>

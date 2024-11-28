@@ -95,19 +95,6 @@ body {
         /* Align text within the links to the left */
     }
 
-    /* Adjust list items (if needed) */
-    .nav ul li {
-        width: 100%;
-        /* Make each item span full width */
-    }
-
-    /* Center align links inside their column */
-    .nav ul li a {
-        padding: 10px 15px;
-        /* Add padding for better click area */
-        display: block;
-        /* Ensure links behave like block elements */
-    }
 
 }
 

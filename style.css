@@ -12,8 +12,6 @@ body {
     background-color: #FBFAF8;
 }
 
-
-/* Sidebar Styles */
 .side-menu {
     height: 100%;
     width: 0;
@@ -55,26 +53,20 @@ body {
     display: none;
 }
 
-
-/* Hide Default Links on Smaller Screens */
 @media screen and (max-width: 768px) {
     .menu-icon {
         display: block;
-        /* Show menu icon */
         font-size: 24px;
         cursor: pointer;
     }
 
     .side-menu {
         display: block;
-        /* Sidebar menu is ready to be toggled */
         width: 0;
-        /* Initially hidden */
     }
 
     .nav-links {
         display: none;
-        /* Hide default navigation links */
     }
 
     .nav ul {
@@ -258,7 +250,6 @@ ul.menu li a:hover {
     justify-content: space-between;
     padding: 0 10%;
     gap: 5%;
-    /* Optional for spacing between text and form */
 }
 
 .booking-text {
@@ -483,45 +474,6 @@ input[type="submit"]:focus {
     line-height: 1.6;
 
 }
-
-/* .team {
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-} */
-
-/* .team .content-team {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1250px;
-    font-family: "Rubik", serif;
-    margin: 0 auto;
-}
-
-.image-team img {
-    width: 100%;
-    height: auto;
-}
-
-.team .text-team {
-    padding-left: 5.5%;
-    padding-right: 8%;
-}
-
-.team .text-team h1 {
-    font-size: 450%;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: "Dela Gothic One", serif;
-    line-height: 1.2;
-
-}
-
-.team .text-team p {
-    font-size: 1.125rem;
-    color: #555;
-    line-height: 1.6;
-} */
 
 .hero video {
     z-index: -10000;

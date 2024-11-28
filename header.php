@@ -9,7 +9,6 @@
 <body <?php body_class(); ?>>
 
 <div class="nav">
-    <!-- Logo -->
     <div class="logo">
         <?php
         $logo_path = get_template_directory() . '/images/logo1_GG.png';
@@ -22,7 +21,6 @@
         <?php endif; ?>
     </div>
 
-    <!-- Navigation Links -->
     <div class="nav-links">
         <?php
         wp_nav_menu(array(
@@ -36,10 +34,8 @@
         ?>
     </div>
 
-    <!-- Sidebar Toggle Button -->
     <div class="menu-icon" onclick="toggleSideMenu()">&#9776;</div>
 
-    <!-- Sidebar Menu -->
     <div id="side-menu" class="side-menu">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSideMenu()">&times;</a>
         <?php
@@ -54,7 +50,6 @@
         ?>
     </div>
 
-    <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
         <div class="language-switcher">
             <ul>

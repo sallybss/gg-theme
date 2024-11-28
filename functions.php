@@ -28,14 +28,3 @@ function theme_enqueue_styles() {
     wp_enqueue_style('theme-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
-
-function enqueue_hamburger_script() {
-    wp_enqueue_script(
-        'hamburger-js',
-        get_template_directory_uri() . '/js/hamburger.js', // Adjust the path if necessary
-        array(), // No dependencies
-        '1.0',
-        true // Load script in footer
-    );
-}
-add_action('wp_enqueue_scripts', 'enqueue_hamburger_script');

@@ -13,7 +13,6 @@ $ww_link = get_field("ww_link");
 
 <footer class="footer">
     <div class="footer-top">
-        <!-- Left Section -->
         <div class="footer-left">
             <div class="footer-logo">
                 <img src="<?php echo $logo['url']; ?>" alt="Logo" class="logo">
@@ -24,7 +23,6 @@ $ww_link = get_field("ww_link");
                     Tlf: <?php echo $phone; ?><br>
                     <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                 </p>
-                <!-- Website Link -->
                 <p>
                     <a href="<?php echo $ww_link; ?>" target="_blank" aria-label="Website">
                         <?php echo $ww_link; ?>
@@ -46,7 +44,6 @@ $ww_link = get_field("ww_link");
             </div>
         </div>
 
-        <!-- Right Section -->
         <div class="footer-right">
             <?php if ($partner_logo): ?>
                 <img src="<?php echo $partner_logo['url']; ?>" alt="<?php echo $partner_text; ?>" class="partner-logo">

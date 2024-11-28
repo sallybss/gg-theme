@@ -15,42 +15,60 @@ body {
 
 /* Sidebar Styles */
 .side-menu {
-    height: 100%;
-    width: 0;
     position: fixed;
+    /* Fix the sidebar to the viewport */
     top: 0;
-    right: 0;
-    background-color: #1a1b1cc0;
+    left: 0;
+    height: 100%;
+    /* Full height to cover the screen */
+    width: 250px;
+    background-color: #111;
+    /* Background color */
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+    overflow-y: auto;
+    /* Add scrolling if content overflows */
+    display: flex;
+    /* Flex layout for alignment */
+    flex-direction: column;
+    /* Stack links in a column */
+    padding: 20px;
+    /* Add padding for spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Optional: Shadow for visibility */
+    transform: translateX(-100%);
+    /* Hide sidebar by default */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
 
-    transition: 0.5s;
-    padding-top: 60px;
-
+.side-menu.open {
+    transform: translateX(0);
+    /* Show sidebar when toggled */
 }
 
 .side-menu a {
-    padding: 8px 8px 8px 32px;
+    color: #fff;
+    /* Link color */
     text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    text-align: center;
+    margin: 10px 0;
+    /* Space between links */
+    font-size: 16px;
+    /* Link font size */
 }
 
 .side-menu a:hover {
-    color: #f1f1f1;
+    color: #FF6214;
+    /* Hover color */
 }
 
-.side-menu .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.side-menu,
-.menu-icon {
-    display: none;
+.closebtn {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    /* Position close button to the right */
 }
 
 

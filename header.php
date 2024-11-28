@@ -74,7 +74,7 @@
 <script>
     function toggleSideMenu() {
         const sideMenu = document.getElementById('side-menu');
-        sideMenu.style.width = sideMenu.style.width === '450px' ? '0' : '250px';
+        sideMenu.style.width = sideMenu.style.width === '450px' ? '0' : '450px';
     }
 </script>
 </body>

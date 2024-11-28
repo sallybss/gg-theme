@@ -12,6 +12,22 @@ body {
     background-color: #FBFAF8;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #FBFAF8;
+    font-family: "Rubik", serif;
+}
+
+.menu-container {
+    display: flex;
+    /* Default for larger screens */
+    gap: 30px;
+}
+
+/* Hide menu links by default on smaller screens */
 .menu-container {
     display: none;
     flex-direction: column;
@@ -24,15 +40,15 @@ body {
     border-top: 1px solid #ccc;
 }
 
-/* When menu is active */
+/* Show menu links when active */
 .menu-container.active {
     display: flex;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu Icon */
 .hamburger {
     display: none;
-    /* Hidden by default */
+    /* Hidden by default for larger screens */
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -46,7 +62,8 @@ body {
     border-radius: 2px;
 }
 
-.nav {
+
+/* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +75,7 @@ body {
     height: 110px;
     background-color: #FBFAF8;
 
-}
+} */
 
 /* Logo styling */
 .nav .logo img {

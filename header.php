@@ -24,6 +24,7 @@
         <?php endif; ?>
     </div>
 
+    <!-- Hamburger Menu Icon -->
     <div class="hamburger">
         <span></span>
         <span></span>
@@ -44,17 +45,6 @@
         ?>
     </div>
 
-    <!-- WordPress Navigation Menu -->
-    <?php
-    wp_nav_menu( array(
-        'theme_location' => 'primary-menu',
-        'container' => false, // No container around <ul>
-        'items_wrap' => '<ul class="menu">%3$s</ul>',
-        'fallback_cb' => function () {
-            echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
-        },
-    ));
-    ?>
     <!-- Language Switcher -->
     <?php if (function_exists('pll_the_languages')): ?>
         <div class="language-switcher">
@@ -68,6 +58,7 @@
             </ul>
         </div>
     <?php endif; ?>
+
 </div>
 
 <?php wp_footer(); ?>

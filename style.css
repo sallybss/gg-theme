@@ -15,60 +15,42 @@ body {
 
 /* Sidebar Styles */
 .side-menu {
-    position: fixed;
-    /* Fix the sidebar to the viewport */
-    top: 0;
-    left: 0;
     height: 100%;
-    /* Full height to cover the screen */
-    width: 250px;
-    background-color: #111;
-    /* Background color */
-    z-index: 1000;
-    /* Ensure it appears above other elements */
-    overflow-y: auto;
-    /* Add scrolling if content overflows */
-    display: flex;
-    /* Flex layout for alignment */
-    flex-direction: column;
-    /* Stack links in a column */
-    padding: 20px;
-    /* Add padding for spacing */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    /* Optional: Shadow for visibility */
-    transform: translateX(-100%);
-    /* Hide sidebar by default */
-    transition: transform 0.3s ease-in-out;
-    /* Smooth transition */
-}
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1a1b1cc0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 
-.side-menu.open {
-    transform: translateX(0);
-    /* Show sidebar when toggled */
 }
 
 .side-menu a {
-    color: #fff;
-    /* Link color */
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    margin: 10px 0;
-    /* Space between links */
-    font-size: 16px;
-    /* Link font size */
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
 }
 
 .side-menu a:hover {
-    color: #FF6214;
-    /* Hover color */
+    color: #f1f1f1;
 }
 
-.closebtn {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 20px;
-    cursor: pointer;
-    align-self: flex-end;
-    /* Position close button to the right */
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.side-menu,
+.menu-icon {
+    display: none;
 }
 
 
@@ -91,25 +73,6 @@ body {
     .nav-links {
         display: none;
         /* Hide default navigation links */
-    }
-
-    .nav ul {
-        flex-direction: column;
-        /* Stack links vertically */
-        gap: 15px;
-        /* Adjust gap between links */
-        align-items: flex-start;
-        /* Align links to the left */
-        padding: 10px;
-        margin: 0 auto;
-        width: 100%;
-        /* Optional: Make it span full width */
-        text-align: left;
-        /* Align text within the links to the left */
-    }
-
-    .ul.menu li a {
-        color: #FBFAF8;
     }
 
 

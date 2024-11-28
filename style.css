@@ -20,23 +20,23 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #333;
+    background-color: #6729ac;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
 .side-menu a {
-    padding: 8px 32px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 18px;
-    color: #fff;
+    font-size: 25px;
+    color: white;
     display: block;
     transition: 0.3s;
 }
 
 .side-menu a:hover {
-    color: #FF6214;
+    color: #f1f1f1;
 }
 
 .side-menu .closebtn {
@@ -45,6 +45,7 @@ body {
     right: 25px;
     font-size: 36px;
 }
+
 
 /* Hide Default Links on Smaller Screens */
 @media screen and (max-width: 768px) {

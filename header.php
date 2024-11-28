@@ -4,15 +4,14 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?></title>
-   
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
 <div class="nav">
+    <!-- Logo -->
     <div class="logo">
         <?php
-        // Display the logo if the file exists
         $logo_path = get_template_directory() . '/images/logo1_GG.png';
         if (file_exists($logo_path)): ?>
             <a href="<?php echo home_url(); ?>">
@@ -23,32 +22,45 @@
         <?php endif; ?>
     </div>
 
-    <!-- WordPress Navigation Menu -->
-    <?php
-    wp_nav_menu( array(
-        'theme_location' => 'primary-menu',
-        'container' => false, // No container around <ul>
-        'items_wrap' => '<ul class="menu">%3$s</ul>',
-        'fallback_cb' => function () {
-            echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
-        },
-    ));
-    ?>
-    <!-- Language Switcher -->
-    <?php if (function_exists('pll_the_languages')): ?>
-        <div class="language-switcher">
-            <ul>
-                <?php
-                pll_the_languages(array(
-                    'show_flags' => 1,
-                    'show_names' => 0
-                ));
-                ?>
-            </ul>
-        </div>
-    <?php endif; ?>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary-menu',
+            'container' => false,
+            'items_wrap' => '<ul class="menu">%3$s</ul>',
+            'fallback_cb' => function () {
+                echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+            },
+        ));
+        ?>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <div class="menu-icon" onclick="toggleSideMenu()">&#9776;</div>
+
+    <!-- Sidebar Menu -->
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSideMenu()">&times;</a>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary-menu',
+            'container' => false,
+            'items_wrap' => '<ul class="menu">%3$s</ul>',
+            'fallback_cb' => function () {
+                echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+            },
+        ));
+        ?>
+    </div>
 </div>
 
 <?php wp_footer(); ?>
+<script>
+    function toggleSideMenu() {
+        const sideMenu = document.getElementById('side-menu');
+        sideMenu.style.width = sideMenu.style.width === '250px' ? '0' : '250px';
+    }
+</script>
 </body>
 </html>

@@ -12,6 +12,8 @@ body {
     background-color: #FBFAF8;
 }
 
+
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -26,11 +28,13 @@ body {
 
 }
 
+/* Logo styling */
 .nav .logo img {
     width: 150px;
     height: auto;
 }
 
+/* Menu styling */
 ul.menu {
     list-style: none;
     display: flex;
@@ -81,62 +85,6 @@ ul.menu li a:hover {
 .language-switcher img {
     width: 24px;
     height: auto;
-}
-
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    /* Hidden by default on larger screens */
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-}
-
-/* Menu Container for Mobile */
-.menu-container {
-    display: flex;
-    /* Default for larger screens */
-    gap: 30px;
-}
-
-.menu-container {
-    display: none;
-    /* Hidden on smaller screens initially */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #FBFAF8;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #ccc;
-    padding: 20px 0;
-}
-
-.menu-container.active {
-    display: flex;
-    /* Shown when the hamburger menu is clicked */
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-    .menu-container {
-        display: none;
-        /* Initially hidden on smaller screens */
-    }
-
-    .hamburger {
-        display: flex;
-        /* Show hamburger menu on smaller screens */
-    }
 }
 
 

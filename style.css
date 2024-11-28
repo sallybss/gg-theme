@@ -24,12 +24,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    flex-direction: column;
-    /* Stack links in a column */
-    justify-content: flex-start;
-    /* Align links at the top */
-    align-items: flex-start;
-    /* Align links to the left */
+
 }
 
 .side-menu a {
@@ -93,6 +88,10 @@ body {
         /* Optional: Make it span full width */
         text-align: left;
         /* Align text within the links to the left */
+    }
+
+    .ul.menu li a {
+        color: #FBFAF8;
     }
 
 

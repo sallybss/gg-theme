@@ -24,11 +24,25 @@
         <?php endif; ?>
     </div>
 
-    <button class="hamburger" aria-label="Toggle menu">
+    <div class="hamburger">
         <span></span>
         <span></span>
         <span></span>
-    </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="menu-container">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary-menu',
+            'container' => false,
+            'items_wrap' => '<ul class="menu">%3$s</ul>',
+            'fallback_cb' => function () {
+                echo '<ul class="menu"><li><a href="#">Menu not assigned</a></li></ul>';
+            },
+        ));
+        ?>
+    </div>
 
     <!-- WordPress Navigation Menu -->
     <?php

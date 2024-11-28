@@ -12,6 +12,37 @@ body {
     background-color: #FBFAF8;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    /* Adjust position based on your needs */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Adjust left padding if needed */
+    transform: translateY(-50%);
+    display: none;
+    /* Initially hide on larger screens */
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add animation styles here */
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -654,6 +685,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+
+    .nav {
+        /* Adjust styles for smaller screens */
+        justify-content: flex-start;
+        /* Align menu items to left */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        /* Show hamburger menu on smaller screens */
+    }
+
+    .menu {
+        /* Hide the original menu items initially */
+        display: none;
+    }
+
     .nav ul {
         font-size: 14px;
         gap: 10%;

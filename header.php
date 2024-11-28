@@ -10,6 +10,11 @@
 <body <?php body_class(); ?>>
 
 <div class="nav">
+<div class="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
     <div class="logo">
         <?php
         // Display the logo if the file exists

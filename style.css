@@ -81,6 +81,13 @@ body {
         gap: 10px;
     }
 
+    ul.menu li a {
+        text-decoration: none;
+        color: #FBFAF8;
+        font-size: 16px;
+        padding: 10px;
+    }
+
 }
 
 .nav {

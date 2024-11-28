@@ -57,10 +57,10 @@
 
 <?php wp_footer(); ?>
 <script>
-  function toggleSideMenu() {
-    const sideMenu = document.getElementById('side-menu');
-    sideMenu.style.width = sideMenu.style.width === '250px' ? '0' : '250px';
-}
+    function toggleSideMenu() {
+        const sideMenu = document.getElementById('side-menu');
+        sideMenu.style.width = sideMenu.style.width === '250px' ? '0' : '250px';
+    }
 </script>
 </body>
 </html>
